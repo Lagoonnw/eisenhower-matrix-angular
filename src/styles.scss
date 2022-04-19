@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-color: #ededf1;
+  //--box-shadow:  13px 13px 15px #d8dbe1, -13px -13px 15px #FFFFFF;
+  --box-shadow:  5px 5px 7px #d8dbe1, -5px -5px 7px #FFFFFF;
+  --box-shadow-invert: inset 18px 18px 30px #d8dbe1, inset -18px -18px 30px #FFFFFF;
+  --br-30: 30px;
+  --br-50: 50px;
+  --important-max-color: #f56f4e;
+  --important-min-color: #6ebef6;
+  --urgent-max-color: #f9f047;
+  --urgent-min-color: #0fd850;
+}
+
+body {
+  //animation: bodyBG forwards infinite ease 120s;
+  background-color: var(--bg-color);
+}
+
+.container {
+  background-color: var(--bg-color);
+}
+
+@keyframes bodyBG {
+  0% {
+    background-color: var(--important-max-color);
+  }
+  25% {
+    background-color: var(--important-min-color);
+  }
+  50% {
+    background-color: var(--urgent-max-color);
+  }
+  100% {
+    background-color: var(--urgent-min-color);
+  }
+}

@@ -1,0 +1,6 @@
+<div class="wrapper d-flex p-4 mb-2 mt-2 col-12" *ngIf="task">
+    <div class="label flex-shrink-0 m-1  overflow-hidden" >
+        <div [style.background-image]="task.gradient" class="w-100 h-100" [appGradientAnimation]="animation"></div>
+    </div>
+    <p >{{ task.description }}</p>
+</div>
